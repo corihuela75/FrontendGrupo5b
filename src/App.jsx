@@ -1,22 +1,20 @@
 // App.jsx
-import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Sidebar from "./component/sidebar";
-import Home from "./pages/Home";
-import Settings from "./pages/Settings";
-import Profile from "./pages/Profile";
+import { Sidebar } from "./components/Sidebar";
+import Container from "./components/Container";
 
 function App() {
   return (
     <Router>
       <div className="flex">
         <Sidebar />
-        <div className="p-6 w-full">
+        <Container></Container>
+        <div className="md:ml-72 p-4 transition-all duration-300">
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/perfil" element={<Profile />} />
-            <Route path="/configuracion" element={<Settings />} />
-            <Route path="*" element={<Home />} />
+            <Route path="/" element={<Container />} />
+            {/* <Route path="/Presentation" element={<Presentation />} /> */}
+            
+            <Route path="*" element={<Container />} />
           </Routes>
         </div>
       </div>
