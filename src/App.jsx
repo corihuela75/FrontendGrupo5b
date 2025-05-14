@@ -1,25 +1,20 @@
-// App.jsx
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Sidebar } from "./components/Sidebar";
-import Container from "./components/Container";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import { Presentation } from "./pages/Presentation";
+import Container from "./containers/Container";
 
-function App() {
+export default function App() {
   return (
+    <>
     <Router>
-      <div className="flex">
-        <Sidebar />
-        <Container></Container>
-        <div className="md:ml-72 p-4 transition-all duration-300">
-          <Routes>
-            <Route path="/" element={<Container />} />
-            {/* <Route path="/Presentation" element={<Presentation />} /> */}
-            
-            <Route path="*" element={<Container />} />
-          </Routes>
-        </div>
-      </div>
+      <Routes>
+        <Route path="/" element={<Container />}>
+          <Route index element={<Navigate to="/presentation" replace />} />
+          <Route path="presentation" element={<Presentation />} />
+        </Route>
+
+        <Route path="*" element={<Navigate to="/presentation" replace />} />
+      </Routes>
     </Router>
+    </>
   );
 }
-
-export default App;

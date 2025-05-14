@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { IconButton, Drawer } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import { CardSidebar } from "./SidebarCard";
+import { CardSidebar } from "./CardSidebar";
 
 
 export function Sidebar() {
   const [isDrawerOpen, setIsDrawerOpen] = React.useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 720);
 
   const openDrawer = () => setIsDrawerOpen(true);
   const closeDrawer = () => isMobile && setIsDrawerOpen(false);
@@ -41,7 +41,6 @@ export function Sidebar() {
       ) :(
         <CardSidebar></CardSidebar>
       )
-
       )}
       
     </>

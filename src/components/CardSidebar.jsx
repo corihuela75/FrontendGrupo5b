@@ -5,6 +5,7 @@ import {
   Card,
 } from "@material-tailwind/react";
 import logo from '../assets/logo.jpg'
+import { Link } from "react-router-dom";
 
 export function CardSidebar(){
 
@@ -12,7 +13,7 @@ export function CardSidebar(){
         <Card
           color="transparent"
           shadow={true}
-          className="h-screen max-h-screen overflow-y-auto px-1 "
+          className="h-screen max-w-[20rem] overflow-y-auto px-1 shadow-xl shadow-blue-gray-900/5"
         >
           <div className="mb-1 flex items-center p-2">
             <img
@@ -30,7 +31,8 @@ export function CardSidebar(){
                  <path d="m12 5.432 8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 0-.75-.75h-3a.75.75 0 0 0-.75.75V21a.75.75 0 0 1-.75.75H5.625a1.875 1.875 0 0 1-1.875-1.875v-6.198a2.29 2.29 0 0 0 .091-.086L12 5.432Z" />
                </svg>
               </ListItemPrefix>
-              Presentación
+              <Link to="/presentation">Presentación</Link>
+              
             </ListItem>
 
 
