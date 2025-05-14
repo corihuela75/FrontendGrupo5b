@@ -1,34 +1,80 @@
- import {
-  Card,
-  CardHeader,
-  CardBody,
-  CardFooter,
-  Typography,
-  Button,
-} from "@material-tailwind/react";
+import { Typography } from "@material-tailwind/react";
+import { ProfileCard } from "../components/ProfileCard";
 
-export function Presentation() {
-  return (
-    <Card className="mt-6 w-96">
-      <CardHeader color="blue-gray" className="relative h-56">
-        <img
-          src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
-          alt="card-image"
-        />
-      </CardHeader>
-      <CardBody>
-        <Typography variant="h5" color="blue-gray" className="mb-2">
-          UI/UX Review Check
-        </Typography>
-        <Typography>
-          The place is close to Barceloneta Beach and bus stop just 2 min by
-          walk and near to &quot;Naviglio&quot; where you can enjoy the main
-          night life in Barcelona.
-        </Typography>
-      </CardBody>
-      <CardFooter className="pt-0">
-        <Button>Read More</Button>
-      </CardFooter>
-    </Card>
-  );
+export default function Presentation() {
+    const Heber = {
+        name:"Heber Duarte",
+        profession: "Angular & React Developer",
+        url_image:"/public/images/profiles-photo/profile_heber.jpg",
+        social_media:{
+            github:"https://github.com/Heber-739",
+            linkedin: "https://www.linkedin.com/in/heber739/",
+            instagram:"a"
+        }
+    }
+
+    const Cris = {
+        name:"Cristian",
+        profession: "Heroe del Voley",
+        url_image:"/public/images/profiles-photo/crisjpg.jpg",
+        social_media:{
+            github:"a",
+            linkedin: "a",
+            instagram:"a"
+        }
+    }
+    const Eli = {
+        name:"Eli",
+        profession: "Domadora de michis",
+        url_image:"/public/images/profiles-photo/Eli.jpg",
+        social_media:{
+            github:"ha",
+            linkedin: "a",
+            instagram:"a"
+        }
+    }
+    
+    const Agos = {
+        name:"Agostina",
+        profession: "Proffesional Instagrammer",
+        url_image:"/public/images/profiles-photo/Agos.jpg",
+        social_media:{
+            github:"a",
+            linkedin: "a",
+            instagram:"a"
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    return (
+        <section className="flex flex-col">
+            <div className="flex flex-col py-9 px-1 gap-7">
+                <Typography variant="h1" className="text-3xl text-center ">Presentación del equipo</Typography>
+                <Typography variant="lead" className="text-justify">
+        Material Tailwind is an easy to use components library for Tailwind CSS
+        and Material Design. It provides a simple way to customize your
+        components, you can change the colors, fonts, breakpoints and everything
+        you need.
+      </Typography>
+            </div>
+            <div className="flex flex-wrap justify-around gap-y-3 my-12">
+                {/* <ProfileCard name="" subtitle="" redes={[]} img="" ></ProfileCard> */}
+                <ProfileCard user={Agos} ></ProfileCard>
+                <ProfileCard user={Eli} ></ProfileCard>
+                <ProfileCard user={Cris}  ></ProfileCard>
+                <ProfileCard user={Heber} ></ProfileCard>
+            </div>
+        </section>
+    );
 }

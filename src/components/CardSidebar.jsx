@@ -4,7 +4,6 @@ import {
   ListItemPrefix,
   Card,
 } from "@material-tailwind/react";
-import logo from '../assets/logo.jpg'
 import { Link } from "react-router-dom";
 
 export function CardSidebar(){
@@ -13,11 +12,11 @@ export function CardSidebar(){
         <Card
           color="transparent"
           shadow={true}
-          className="h-screen max-w-[20rem] overflow-y-auto px-1 shadow-xl shadow-blue-gray-900/5"
+          className="h-screen w-80 overflow-y-auto px-1 shadow-xl shadow-blue-gray-900/5"
         >
           <div className="mb-1 flex items-center p-2">
             <img
-              src={logo}
+              src="/public/images/logo.jpg"
               alt="brand"
               className="w-56 m-auto"
             />

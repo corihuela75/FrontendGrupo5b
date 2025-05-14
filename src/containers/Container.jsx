@@ -1,13 +1,15 @@
 import { Outlet } from "react-router-dom";
 import { Sidebar } from "../components/Sidebar";
 
-
 export default function Container() {
-    return (
-        <div className="flex">
+  return (
+    <body>
+      <div className="flex">
         <Sidebar />
+        <main className="w-full">
         <Outlet />
-        </div>
-        
-    );
+        </main>
+      </div>
+    </body>
+  );
 }
