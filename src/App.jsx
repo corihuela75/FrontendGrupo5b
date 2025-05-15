@@ -1,27 +1,20 @@
-// App.jsx
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Sidebar from "./component/sidebar";
-import Home from "./pages/Home";
-import Settings from "./pages/Settings";
-import Profile from "./pages/Profile";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import Container from "./containers/Container";
+import Presentation from "./pages/Presentation";
 
-function App() {
+export default function App() {
   return (
+    <>
     <Router>
-      <div className="flex">
-        <Sidebar />
-        <div className="p-6 w-full">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/perfil" element={<Profile />} />
-            <Route path="/configuracion" element={<Settings />} />
-            <Route path="*" element={<Home />} />
-          </Routes>
-        </div>
-      </div>
+      <Routes>
+        <Route path="/" element={<Container />}>
+          <Route index element={<Navigate to="/presentation" replace />} />
+          <Route path="presentation" element={<Presentation />} />
+        </Route>
+
+        <Route path="*" element={<Navigate to="/presentation" replace />} />
+      </Routes>
     </Router>
+    </>
   );
 }
-
-export default App;
