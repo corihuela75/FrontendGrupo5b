@@ -1,3 +1,32 @@
+## Requisitos previos
+
+Antes de comenzar, asegurate de tener instalado:
+
+- [Node.js](https://nodejs.org/) (versión 16 o superior recomendada)
+- Git
+  
+## Cómo clonar y ejecutar el proyecto
+### 1. Clonar el repositorio
+   
+`git clone https://github.com/agostinapoli/FrontendGrupo5.git`
+
+### 2. Entrar al directorio del proyecto
+
+`cd FrontendGrupo5`
+
+### 3. Instalar dependencias
+
+`npm install`
+
+### 4. Ejecutar el servidor de desarrollo
+
+`npm run dev`
+
+
+
+
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
