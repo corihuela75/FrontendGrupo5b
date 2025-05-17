@@ -24,6 +24,14 @@ Antes de comenzar, asegurate de tener instalado:
 
 
 
+---
+
+# CAMBIOS RAMA ORI1 (16/05/2025)
+- Nuevo logo
+- Modificacion de rutas de la imagenes para que se vean en Vercel
+- Actualizacion datos tarjeta Cristian
+- Cambio texto presentacion
+- Ajuste imagenes de los perfiles
 
 
 
