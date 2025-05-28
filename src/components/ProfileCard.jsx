@@ -1,56 +1,21 @@
-import {
-  Card,
-  CardHeader,
-  CardBody,
-  CardFooter,
-  Typography,
-} from "@material-tailwind/react";
-
-export function ProfileCard({ user }) {
+// components/ProfileCard.jsx
+export default function ProfileCard({ member, onClose }) {
   return (
-    <Card className="w-2/5 mb-12">
-      <CardHeader floated={false} className="h-auto shadow-none border-none bg-transparent flex justify-center">
-        <img className="w-80 h-80 object-cover rounded-full mx-auto mt-4" src={user.url_image} alt="profile-picture" />
-      </CardHeader>
-      <CardBody className="text-center">
-        <Typography variant="h4" color="blue-gray" className="mb-2">
-          {user.name}
-        </Typography>
-        <Typography color="blue-gray" className="font-medium" textGradient>
-          {user.profession}
-        </Typography>
-      </CardBody>
-      <CardFooter className="flex justify-evenly my-2">
-        {user.social_media.github && (<Typography
-          as="a"
-          href={user.social_media.github}
-          target="_blank"
-          variant="lead"
-          color="black"
-          className="scale-150"
-        >
-          <i className="fab fa-github" />
-        </Typography>)}
-        {(user.social_media.linkedin && <Typography
-          as="a"
-          href={user.social_media.linkedin}
-          variant="lead"
-          target="_blank"
-          color="blue"
-          className="scale-150"
-        >
-          <i className="fab fa-linkedin" />
-        </Typography>)}
-        {(user.social_media.instagram && <Typography
-          as="a"
-          href="#instagram"
-          variant="lead"
-          color="purple"
-          className="scale-150"
-        >
-          <i className="fab fa-instagram" />
-        </Typography>)}
-      </CardFooter>
-    </Card>
+    <div className="mt-8 p-6 bg-white rounded shadow">
+      <div className="flex items-center gap-4">
+        <img src={member.image} alt={member.name} className="w-64 h-64 rounded-full" />
+        <div>
+          <h3 className="text-xl font-bold">{member.name}</h3>
+          <p className="text-gray-600 italic">{member.role}</p>
+        </div>
+      </div>
+      <p className="mt-4 text-gray-700">{member.bio}</p>
+      <button
+        className="mt-4 px-4 py-2 border border-gray-300 rounded hover:bg-gray-100"
+        onClick={onClose}
+      >
+        Cerrar perfil
+      </button>
+    </div>
   );
 }

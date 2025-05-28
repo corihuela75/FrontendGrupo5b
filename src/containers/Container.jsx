@@ -3,13 +3,11 @@ import { Sidebar } from "../components/Sidebar";
 
 export default function Container() {
   return (
-    <body>
       <div className="flex">
         <Sidebar />
-        <main className="w-full">
+        <main className="flex-grow p-4">
         <Outlet />
         </main>
       </div>
-    </body>
   );
 }
