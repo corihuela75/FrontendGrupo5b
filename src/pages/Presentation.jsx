@@ -12,28 +12,49 @@ export default function Presentation() {
       name: "Eli",
       role: "Domadora de michis",
       image: "/images/profiles-photo/Eli.jpg",
-      bio: "Eli es nuestra gurú de la calma felina, siempre lista para traer armonía al equipo."
+      bio: "Eli es nuestra gurú de la calma felina, siempre lista para traer armonía al equipo.",
+      social_media: {
+        github: "ha",
+        linkedin: "a",
+        instagram: "a"
+      }
     },
     {
       name: "Agostina",
       role: "Professional Instagrammer",
       image: "/images/profiles-photo/Agos.jpg",
-      bio: "Agos domina el arte de contar historias visuales y captar la atención en redes."
+      bio: "Agos domina el arte de contar historias visuales y captar la atención en redes.",
+      social_media: {
+        github: "ha",
+        linkedin: "a",
+        instagram: "a"
+      }
     },
     {
       name: "Heber Duarte",
       role: "Angular & React Developer",
       image: "/images/profiles-photo/profile_heber.jpg",
-      bio: "Desarrollador frontend con experiencia en Angular y React."
+      bio: "Desarrollador frontend con experiencia en Angular y React.",
+      social_media: {
+        github: "https://github.com/Heber-739",
+        linkedin: "https://www.linkedin.com/in/heber739/",
+        instagram: "a"
+      }
     },
     {
       name: "Cristian Orihuela",
       role: "Administrativo-contable",
       image: "/images/profiles-photo/cris.jpg",
-      bio: "Cristian se especializa en gestión administrativa y contabilidad para proyectos tecnológicos."
+      bio: "Cristian se especializa en gestión administrativa y contabilidad para proyectos tecnológicos.",
+      social_media: {
+        github: "https://github.com/corihuela75",
+        linkedin: "https://www.linkedin.com/in/cristian-orihuela",
+        instagram: "a"
+      }
     }
   ];
 
+  
   return (
     <section className="min-h-screen bg-gray-100 p-8">
       <div className="max-w-4xl mx-auto">
@@ -69,17 +90,17 @@ export default function Presentation() {
 
 
 
-         <section className="mt-12">
+        <section className="mt-12">
           <h2 className="text-2xl font-semibold mb-4">Objetivo General del Trabajo</h2>
           <p className="text-gray-700 mb-6">
             Desarrollar una Single Page Application (SPA) usando React y React Router, aplicando buenas prácticas
-             de diseño y organización. El proyecto debe incluir el consumo de datos desde archivos locales (JSON) y 
-             APIs externas. Además, el proyecto debe estar desplegado en la nube a través de Vercel y gestionado con GitHub.
+            de diseño y organización. El proyecto debe incluir el consumo de datos desde archivos locales (JSON) y
+            APIs externas. Además, el proyecto debe estar desplegado en la nube a través de Vercel y gestionado con GitHub.
           </p>
 
           <h3 className="text-xl font-semibold mb-2">Organización del Trabajo en Equipo</h3>
           <p className="text-gray-700 mb-6">
-            El equipo debe tener 4 integrantes, con roles definidos como: Frontend, Backend, Documentación y Coordinación. 
+            El equipo debe tener 4 integrantes, con roles definidos como: Frontend, Backend, Documentación y Coordinación.
             El trabajo colaborativo debe reflejarse en una bitácora final donde se explique cómo se organizaron y qué metodología utilizaron.
           </p>
 
