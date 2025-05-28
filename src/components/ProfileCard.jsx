@@ -10,6 +10,14 @@ export default function ProfileCard({ member, onClose }) {
         </div>
       </div>
       <p className="mt-4 text-gray-700">{member.bio}</p>
+
+      <div className="mt-4 text-gray-700">
+        <p><strong>GitHub: </strong> {member.social_media.github}</p>
+        <p><strong>LinkedIn: </strong> {member.social_media.linkedin}</p>
+        <p><strong>Instagram: </strong> {member.social_media.instagram}</p>
+      </div>
+
+
       <button
         className="mt-4 px-4 py-2 border border-gray-300 rounded hover:bg-gray-100"
         onClick={onClose}
