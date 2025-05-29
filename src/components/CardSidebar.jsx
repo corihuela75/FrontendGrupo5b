@@ -31,7 +31,6 @@ export function CardSidebar() {
             </svg>
           </ListItemPrefix>
           <Link to="/presentation">Presentación</Link>
-
         </ListItem>
 
 
@@ -79,7 +78,7 @@ export function CardSidebar() {
               <path d="M14.25 5.25a5.23 5.23 0 0 0-1.279-3.434 9.768 9.768 0 0 1 6.963 6.963A5.23 5.23 0 0 0 16.5 7.5h-1.875a.375.375 0 0 1-.375-.375V5.25Z" />
             </svg>
           </ListItemPrefix>
-          JSON
+          <Link to="/roadmap">Roadmap</Link>
         </ListItem>
 
         <ListItem className="font-bold text-lg">
