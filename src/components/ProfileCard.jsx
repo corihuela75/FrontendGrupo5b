@@ -1,56 +1,71 @@
-import {
-  Card,
-  CardHeader,
-  CardBody,
-  CardFooter,
-  Typography,
-} from "@material-tailwind/react";
+// components/ProfileCard.jsx
 
-export function ProfileCard({ user }) {
+// TARJETA DE PERFIL DE MIEMBRO DEL EQUIPO (AMPLIADA)
+
+export default function ProfileCard({ member, onClose }) {
   return (
-    <Card className="w-2/5 mb-12">
-      <CardHeader floated={false} className="h-auto shadow-none border-none bg-transparent flex justify-center">
-        <img className="w-80 h-80 object-cover rounded-full mx-auto mt-4" src={user.url_image} alt="profile-picture" />
-      </CardHeader>
-      <CardBody className="text-center">
-        <Typography variant="h4" color="blue-gray" className="mb-2">
-          {user.name}
-        </Typography>
-        <Typography color="blue-gray" className="font-medium" textGradient>
-          {user.profession}
-        </Typography>
-      </CardBody>
-      <CardFooter className="flex justify-evenly my-2">
-        {user.social_media.github && (<Typography
-          as="a"
-          href={user.social_media.github}
-          target="_blank"
-          variant="lead"
-          color="black"
-          className="scale-150"
+    <div className="mt-8 p-6 bg-white rounded-xl border border-gray-200">
+      {/* Encabezado */}
+      <div className="flex flex-col items-center text-center gap-4">
+        <img
+          src={member.image}
+          alt={member.name}
+          className="w-52 h-52 rounded-full border-4 border-blue-600"
+        />
+        <div>
+          <h3 className="text-3xl font-bold text-blue-800">{member.name}</h3>
+          <p className="text-blue-600 italic">{member.role}</p>
+        </div>
+      </div>
+
+      {/* Bio */}
+      <p className="mt-6 text-gray-800 text-sm md:text-base leading-relaxed">
+        {member.bio}
+      </p>
+
+      {/* Redes sociales */}
+      <div className="mt-6 text-gray-800 border-t border-gray-200 pt-4">
+        <h4 className="text-lg font-semibold text-blue-700 mb-2">Redes Sociales</h4>
+        <ul className="space-y-1">
+          <li><strong>GitHub:</strong> <a href={member.social_media.github} className="text-blue-500 hover:underline" target="_blank">{member.social_media.github}</a></li>
+          <li><strong>LinkedIn:</strong> <a href={member.social_media.linkedin} className="text-blue-500 hover:underline" target="_blank">{member.social_media.linkedin}</a></li>
+          <li><strong>Instagram:</strong> <span className="text-gray-600">{member.social_media.instagram}</span></li>
+        </ul>
+      </div>
+
+      {/* Experiencia */}
+      <div className="mt-6 border-t border-gray-200 pt-4">
+        <h4 className="text-lg font-semibold text-blue-700 mb-2">Experiencia</h4>
+        <ul className="space-y-3 text-gray-800">
+          {member.experience?.map((exp, index) => (
+            <li key={index}>
+              <p className="font-medium">{exp.role} <span className="text-sm text-gray-500">({exp.period})</span></p>
+              <p className="text-sm text-gray-600">{exp.company}</p>
+              <p className="text-sm">{exp.description}</p>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      {/* Contacto */}
+      <div className="mt-6 border-t border-gray-200 pt-4">
+        <h4 className="text-lg font-semibold text-blue-700 mb-2">Contacto</h4>
+        <ul className="text-gray-800 space-y-1">
+          <li><strong>Email:</strong> {member.contact?.email}</li>
+          <li><strong>Teléfono:</strong> {member.contact?.phone}</li>
+          <li><strong>Ubicación:</strong> {member.contact?.location}</li>
+        </ul>
+      </div>
+
+      {/* Botón */}
+      <div className="text-center">
+        <button
+          className="mt-6 px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
+          onClick={onClose}
         >
-          <i className="fab fa-github" />
-        </Typography>)}
-        {(user.social_media.linkedin && <Typography
-          as="a"
-          href={user.social_media.linkedin}
-          variant="lead"
-          target="_blank"
-          color="blue"
-          className="scale-150"
-        >
-          <i className="fab fa-linkedin" />
-        </Typography>)}
-        {(user.social_media.instagram && <Typography
-          as="a"
-          href="#instagram"
-          variant="lead"
-          color="purple"
-          className="scale-150"
-        >
-          <i className="fab fa-instagram" />
-        </Typography>)}
-      </CardFooter>
-    </Card>
+          Cerrar perfil
+        </button>
+      </div>
+    </div>
   );
 }
