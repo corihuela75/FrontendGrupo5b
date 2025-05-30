@@ -30,6 +30,16 @@ export function CardSidebar() {
               <path d="m12 5.432 8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 0-.75-.75h-3a.75.75 0 0 0-.75.75V21a.75.75 0 0 1-.75.75H5.625a1.875 1.875 0 0 1-1.875-1.875v-6.198a2.29 2.29 0 0 0 .091-.086L12 5.432Z" />
             </svg>
           </ListItemPrefix>
+          <Link to="/home">Home</Link>
+        </ListItem>
+
+        <ListItem className="font-bold text-lg">
+          <ListItemPrefix>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" className="w-6 h-6">
+              <path d="M16 11a4 4 0 1 1-8 0 4 4 0 0 1 8 0z" />
+              <path fillRule="evenodd" d="M12 14a7 7 0 0 0-7 7v1h14v-1a7 7 0 0 0-7-7z" clipRule="evenodd" />
+            </svg>
+          </ListItemPrefix>
           <Link to="/presentation">Presentación</Link>
         </ListItem>
 

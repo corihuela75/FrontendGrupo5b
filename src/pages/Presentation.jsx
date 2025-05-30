@@ -7,54 +7,131 @@ import { useState } from "react";
 export default function Presentation() {
   const [selectedMember, setSelectedMember] = useState(null);
 
-  const teamMembers = [
-    {
-      name: "Eli",
-      role: "Domadora de michis",
-      image: "/images/profiles-photo/Eli.jpg",
-      bio: "Eli es nuestra gurú de la calma felina, siempre lista para traer armonía al equipo.",
-      social_media: {
-        github: "ha",
-        linkedin: "a",
-        instagram: "a"
-      }
+const teamMembers = [
+  {
+    name: "Eli",
+    role: "Domadora de michis",
+    image: "/images/profiles-photo/Eli.jpg",
+    bio: "Eli es nuestra gurú de la calma felina, siempre lista para traer armonía al equipo.",
+    social_media: {
+      github: "https://github.com/eli-catmaster",
+      linkedin: "https://www.linkedin.com/in/eli-catmaster",
+      instagram: "https://www.instagram.com/eli.y.michis"
     },
-    {
-      name: "Agostina",
-      role: "Professional Instagrammer",
-      image: "/images/profiles-photo/Agos.jpg",
-      bio: "Agos domina el arte de contar historias visuales y captar la atención en redes.",
-      social_media: {
-        github: "ha",
-        linkedin: "a",
-        instagram: "a"
+    experience: [
+      {
+        company: "Refugio Gatuno",
+        role: "Coordinadora de Bienestar Felino",
+        period: "2021 - Presente",
+        description: "Implementación de espacios colaborativos y sistemas de adopción responsable."
+      },
+      {
+        company: "Zen Code",
+        role: "Coach de mindfulness felino",
+        period: "2018 - 2021",
+        description: "Facilitación de sesiones relajantes para devs con ayuda de michis."
       }
-    },
-    {
-      name: "Heber Duarte",
-      role: "Angular & React Developer",
-      image: "/images/profiles-photo/profile_heber.jpg",
-      bio: "Desarrollador frontend con experiencia en Angular y React.",
-      social_media: {
-        github: "https://github.com/Heber-739",
-        linkedin: "https://www.linkedin.com/in/heber739/",
-        instagram: "a"
-      }
-    },
-    {
-      name: "Cristian Orihuela",
-      role: "Administrativo-contable",
-      image: "/images/profiles-photo/cris.jpg",
-      bio: "Cristian se especializa en gestión administrativa y contabilidad para proyectos tecnológicos.",
-      social_media: {
-        github: "https://github.com/corihuela75",
-        linkedin: "https://www.linkedin.com/in/cristian-orihuela",
-        instagram: "a"
-      }
+    ],
+    contact: {
+      email: "eli.michis@example.com",
+      phone: "+54 11 2345-6789",
+      location: "Córdoba, Argentina"
     }
-  ];
+  },
+  {
+    name: "Agostina",
+    role: "Professional Instagrammer",
+    image: "/images/profiles-photo/Agos.jpg",
+    bio: "Agos domina el arte de contar historias visuales y captar la atención en redes.",
+    social_media: {
+      github: "https://github.com/agos-media",
+      linkedin: "https://www.linkedin.com/in/agostina-social",
+      instagram: "https://www.instagram.com/agos.visuals"
+    },
+    experience: [
+      {
+        company: "SocialShine",
+        role: "Content Creator",
+        period: "2020 - Presente",
+        description: "Gestión de campañas visuales, reels y colaboraciones con influencers."
+      },
+      {
+        company: "Freelance",
+        role: "Community Manager",
+        period: "2017 - 2020",
+        description: "Administración de marcas personales, planificación de contenido y métricas."
+      }
+    ],
+    contact: {
+      email: "agostina.visuals@example.com",
+      phone: "+54 11 9876-5432",
+      location: "Rosario, Argentina"
+    }
+  },
+  {
+    name: "Heber Duarte",
+    role: "Angular & React Developer",
+    image: "/images/profiles-photo/profile_heber.jpg",
+    bio: "Desarrollador frontend con experiencia en Angular y React.",
+    social_media: {
+      github: "https://github.com/Heber-739",
+      linkedin: "https://www.linkedin.com/in/heber739/",
+      instagram: "https://www.instagram.com/heber.dev"
+    },
+    experience: [
+      {
+        company: "EDUCONEXION",
+        role: "Desarrollador Frontend",
+        period: "2021 - Presente",
+        description: "Desarrollo de interfaces en React y Angular, con enfoque en UX y performance."
+      },
+      {
+        company: "SoftDev SRL",
+        role: "Desarrollador Junior",
+        period: "2019 - 2021",
+        description: "Soporte en proyectos web y mantenimiento de aplicaciones en Angular."
+      }
+    ],
+    contact: {
+      email: "heber.duarte@example.com",
+      phone: "+54 11 3210-6543",
+      location: "Mendoza, Argentina"
+    }
+  },
+  {
+    name: "Cristian Orihuela",
+    role: "Administrativo-contable",
+    image: "/images/profiles-photo/cris.jpg",
+    bio: "Cristian se especializa en gestión administrativa y contabilidad para proyectos tecnológicos.",
+    social_media: {
+      github: "https://github.com/corihuela75",
+      linkedin: "https://www.linkedin.com/in/cristian-orihuela",
+      instagram: "a"
+    },
+    experience: [
+      {
+        company: "EDUCONEXION",
+        role: "Responsable administrativo-contable",
+        period: "2020 - Presente",
+        description: "Gestión integral de procesos contables, conciliaciones bancarias, facturación electrónica y reportes financieros mensuales."
+      },
+      {
+        company: "Soluciones IT SRL",
+        role: "Asistente contable",
+        period: "2015 - 2020",
+        description: "Apoyo en tareas de registración contable, manejo de cuentas corrientes y armado de balances anuales."
+      }
+    ],
+    contact: {
+      email: "cristian.orihuela@example.com",
+      phone: "+54 11 4567-8910",
+      location: "Buenos Aires, Argentina"
+    }
+  }
+];
 
-  
+
+
   return (
     <section className="min-h-screen bg-gray-100 p-8">
       <div className="max-w-4xl mx-auto">
@@ -87,43 +164,6 @@ export default function Presentation() {
             </div>
           )}
         </section>
-
-
-
-        <section className="mt-12">
-          <h2 className="text-2xl font-semibold mb-4">Objetivo General del Trabajo</h2>
-          <p className="text-gray-700 mb-6">
-            Desarrollar una Single Page Application (SPA) usando React y React Router, aplicando buenas prácticas
-            de diseño y organización. El proyecto debe incluir el consumo de datos desde archivos locales (JSON) y
-            APIs externas. Además, el proyecto debe estar desplegado en la nube a través de Vercel y gestionado con GitHub.
-          </p>
-
-          <h3 className="text-xl font-semibold mb-2">Organización del Trabajo en Equipo</h3>
-          <p className="text-gray-700 mb-6">
-            El equipo debe tener 4 integrantes, con roles definidos como: Frontend, Backend, Documentación y Coordinación.
-            El trabajo colaborativo debe reflejarse en una bitácora final donde se explique cómo se organizaron y qué metodología utilizaron.
-          </p>
-
-          <h3 className="text-xl font-semibold mb-2">Estructura y Contenidos del Proyecto</h3>
-          <ul className="list-disc list-inside text-gray-700 mb-6">
-            <li><strong>Sidebar:</strong> Barra lateral fija con el logo del grupo (puede ser creado con IA). Menú vertical con enlaces a las secciones del sitio. Debe ser visible y funcional en todos los dispositivos.</li>
-            <li><strong>Sección Presentación:</strong> Página de portada con tarjetas de cada integrante del equipo (nombre y foto, que puede ser una foto generada por IA o de su mascota).</li>
-            <li><strong>Sección Individual por Integrante:</strong> Página para cada integrante con nombre completo, habilidades, 3 proyectos realizados, y 5 tecnologías representadas con íconos.</li>
-            <li><strong>Sección con Datos desde Archivo JSON:</strong> Archivo con al menos 20 objetos (películas, libros, etc.). Mostrar los datos de manera dinámica (tarjetas o lista).</li>
-            <li><strong>Sección con Datos desde API Pública:</strong> Consumir y mostrar datos desde una API pública.</li>
-            <li><strong>Sección Bitácora:</strong> Describir los roles, organización y metodología (reuniones diarias, Trello, GitFlow).</li>
-          </ul>
-
-          <h3 className="text-xl font-semibold mb-2">Requisitos Técnicos y Funcionales</h3>
-          <ul className="list-disc list-inside text-gray-700">
-            <li>React Router para navegación sin recargar.</li>
-            <li>Responsividad: diseño adaptable a móvil, tablet y escritorio.</li>
-            <li>Componentización: reutilización de componentes.</li>
-            <li>Deploy en Vercel.</li>
-            <li>Repositorio en GitHub con commits claros.</li>
-          </ul>
-        </section>
-
       </div>
     </section>
   );

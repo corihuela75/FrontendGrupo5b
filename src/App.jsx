@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-d
 import Container from "./containers/Container";
 import Presentation from "./pages/Presentation";
 import Roadmap from "./pages/Roadmap";
+import Home from "./pages/Home";
 
 export default function App() {
   return (
@@ -9,11 +10,12 @@ export default function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Container />}>
-          <Route index element={<Navigate to="/presentation" replace />} />
+          <Route index element={<Navigate to="/home" replace />} />
+          <Route path="home" element={<Home />} />
           <Route path="presentation" element={<Presentation />} />
           <Route path="roadmap" element={<Roadmap />} />
         </Route>
-        <Route path="*" element={<Navigate to="/presentation" replace />} />
+        <Route path="*" element={<Navigate to="/home" replace />} />
       </Routes>
     </Router>
     </>

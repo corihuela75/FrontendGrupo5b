@@ -1,4 +1,7 @@
 // components/TeamCard.jsx
+
+// TARJETA DE MIEMBRO DEL EQUIPO (RESUMIDA)
+
 import { Card, CardContent } from "./ui/card";
 import { Github, Linkedin, Instagram } from "lucide-react";
 
