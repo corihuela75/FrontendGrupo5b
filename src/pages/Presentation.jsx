@@ -3,6 +3,10 @@ import { Mail, Github } from "lucide-react";
 import { Button } from "../components/ui/button";
 import TeamCard from "../components/TeamCard";
 import ProfileCard from "../components/ProfileCard";
+import { Roadmap } from "./Roadmap"; // Asegurate de ajustar el path si está en otra carpeta
+
+
+
 import { useState } from "react";
 
 export default function Presentation() {
@@ -33,7 +37,7 @@ export default function Presentation() {
       {/* Lista de integrantes o perfil individual */}
 
         <section className="mb-12">
-          <h2 className="text-2xl font-semibold mb-4">Integrantes del equipo:</h2>
+          {/* <h2 className="text-2xl font-semibold mb-4">Integrantes del equipo:</h2> */}
           {!selectedMember && (
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
               {members.map((member, index) => (
@@ -44,6 +48,7 @@ export default function Presentation() {
           {selectedMember && (
             <div className="mt-8">
               <ProfileCard member={selectedMember} onClose={() => setSelectedMember(null)} />
+              <Roadmap integrante={selectedMember.name} />
             </div>
           )}
         </section>

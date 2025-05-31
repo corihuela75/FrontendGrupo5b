@@ -19,8 +19,8 @@ function renderProgreso(progreso) {
       <span
         key={key}
         className={`px-6 py-4 rounded-lg text-xs font-semibold mr-1 mb-1 ${value
-            ? "bg-green-100 text-green-800 border border-green-300"
-            : "bg-red-100 text-red-800 border border-red-300"
+          ? "bg-green-100 text-green-800 border border-green-300"
+          : "bg-red-100 text-red-800 border border-red-300"
           }`}
       >
         {key}
@@ -72,8 +72,10 @@ export default function TeamWithRoadmap() {
 
   return (
     <div className="max-w-5xl mx-auto p-6">
-      <h1 className="text-3xl font-bold text-center mb-8">Nuestro Equipo</h1>
-
+      <header className="mb-12 text-center">
+        <h1 className="text-4xl font-bold mb-2">Nuestras rutas de aprendizaje</h1>
+        <p className="text-lg text-gray-600"> a lo largo del camino del desarrollo web Front End</p>
+      </header>
       <div className="flex justify-center gap-8 flex-wrap mb-10">
         {members.map((member) => (
           <button
@@ -95,3 +97,4 @@ export default function TeamWithRoadmap() {
     </div>
   );
 }
+export { Roadmap };

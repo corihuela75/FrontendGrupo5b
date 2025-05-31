@@ -93,7 +93,7 @@
     "name": "Cristian Orihuela",
     "role": "Administrativo-contable",
     "image": "/images/profiles-photo/cris.jpg",
-    "bio": "Cristian se especializa en gestión administrativa y contabilidad para proyectos tecnológicos.",
+    "bio": "Cristian se especializa en gestión administrativa y contabilidad.",
     "social_media": {
       "github": "https://github.com/corihuela75",
       "linkedin": "https://www.linkedin.com/in/cristian-orihuela",
@@ -101,22 +101,22 @@
     },
     "experience": [
       {
-        "company": "EDUCONEXION",
+        "company": "Hotel Spa Republica",
         "role": "Responsable administrativo-contable",
-        "period": "2020 - Presente",
+        "period": "2002 - Presente",
         "description": "Gestión integral de procesos contables, conciliaciones bancarias, facturación electrónica y reportes financieros mensuales."
       },
       {
-        "company": "Soluciones IT SRL",
-        "role": "Asistente contable",
-        "period": "2015 - 2020",
+        "company": "Provintel S.R.L.",
+        "role": "Auxiliar contable",
+        "period": "1999 - 2002",
         "description": "Apoyo en tareas de registración contable, manejo de cuentas corrientes y armado de balances anuales."
       }
     ],
     "contact": {
-      "email": "cristian.orihuela@example.com",
-      "phone": "+54 11 4567-8910",
-      "location": "Buenos Aires, Argentina"
+      "email": "ori@live.com.ar",
+      "phone": "+54 223 590-3633",
+      "location": "Mar del Plata, Buenos Aires, Argentina"
     }
   }
 ]
