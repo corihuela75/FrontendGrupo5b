@@ -1,138 +1,550 @@
- {
-  "roadmap": "Frontend Developer",
-  "integrante": "Juan Pérez",
-  "temas": [
-    {
-      "nombre": "Fundamentos Web",
-      "progreso": {
-        "Internet y cómo funciona": false,
-        "HTTP/HTTPS": true,
-        "Navegadores y motor de renderizado": true,
-        "Herramientas de desarrollo del navegador": false
+{
+  "Cristian Orihuela": {
+    "roadmap": "Frontend Developer",
+    "temas": [
+      {
+        "nombre": "Fundamentos Web",
+        "progreso": {
+          "Internet y cómo funciona": true,
+          "HTTP/HTTPS": true,
+          "Navegadores y motor de renderizado": true,
+          "Herramientas de desarrollo del navegador": false
+        }
+      },
+      {
+        "nombre": "HTML",
+        "progreso": {
+          "Elementos básicos": true,
+          "Formularios y validación": true,
+          "Semántica": true,
+          "SEO básico": true,
+          "Accesibilidad": true,
+          "Multimedia (audio, video, canvas, svg)": true,
+          "API de almacenamiento (localStorage, sessionStorage)": false
+        }
+      },
+      {
+        "nombre": "CSS",
+        "progreso": {
+          "Selectores": true,
+          "Box Model": true,
+          "Flexbox": true,
+          "Grid": false,
+          "Responsive Design": true,
+          "Media Queries": true,
+          "Preprocesadores (Sass, Less)": false,
+          "Variables CSS": true,
+          "Animaciones y transiciones": true,
+          "Frameworks CSS (Bootstrap, Tailwind)": false,
+          "Metodologías (BEM, SMACSS, OOCSS)": false
+        }
+      },
+      {
+        "nombre": "JavaScript",
+        "progreso": {
+          "Sintaxis básica": true,
+          "Tipos de datos": true,
+          "Funciones y closures": true,
+          "Objetos y prototipos": true,
+          "DOM y manipulación": true,
+          "Eventos": true,
+          "Fetch / AJAX": true,
+          "ES6+ (let/const, arrow functions, destructuring, spread/rest, clases, módulos)": true,
+          "Programación asíncrona (callbacks, promesas, async/await)": true,
+          "Manejo de errores": false,
+          "Testing básico (Jest, Mocha)": false,
+          "Herramientas para debugging": false
+        }
+      },
+      {
+        "nombre": "Control de versiones",
+        "progreso": {
+          "Git": true,
+          "GitHub/GitLab/Bitbucket": true,
+          "Branching strategies (Git Flow, GitHub Flow)": false
+        }
+      },
+      {
+        "nombre": "React",
+        "progreso": {
+          "JSX": true,
+          "Componentes funcionales y de clase": true,
+          "Hooks (useState, useEffect, custom hooks)": true,
+          "Routing (React Router)": true,
+          "Estado global (Redux, Context API, MobX)": false,
+          "Testing (React Testing Library, Jest)": false,
+          "Ecosistema (Next.js, Gatsby)": false
+        }
+      },
+      {
+        "nombre": "Vue",
+        "progreso": {
+          "Directivas": false,
+          "Componentes": false,
+          "Vue Router": false,
+          "Vuex (state management)": true,
+          "Composition API": false,
+          "Testing": false
+        }
+      },
+      {
+        "nombre": "Angular",
+        "progreso": {
+          "TypeScript": false,
+          "Componentes": false,
+          "Servicios e Inyección de dependencias": false,
+          "Routing": false,
+          "RxJS (programación reactiva)": false,
+          "Testing": false
+        }
+      },
+      {
+        "nombre": "State Management",
+        "progreso": {
+          "Redux": false,
+          "Vuex": false,
+          "Context API": false
+        }
+      },
+      {
+        "nombre": "Herramientas y bundlers",
+        "progreso": {
+          "NPM/Yarn": false,
+          "Webpack": false,
+          "Babel": true,
+          "ESLint / Prettier": false,
+          "Testing (Jest, React Testing Library, Cypress)": false
+        }
+      },
+      {
+        "nombre": "Optimización y performance",
+        "progreso": {
+          "Lazy loading": false,
+          "Optimización de imágenes": true,
+          "Minificación y bundling": false,
+          "Code splitting": false,
+          "Caching": false,
+          "Service Workers y PWA": false
+        }
+      },
+      {
+        "nombre": "Deployment",
+        "progreso": {
+          "Hosting estático (Netlify, Vercel, GitHub Pages)": true,
+          "CI/CD básico (GitHub Actions, Travis CI)": true
+        }
       }
-    },
-    {
-      "nombre": "HTML",
-      "progreso": {
-        "Elementos básicos": true,
-        "Formularios y validación": false,
-        "Semántica": false,
-        "SEO básico": false,
-        "Accesibilidad": true,
-        "Multimedia (audio, video, canvas, svg)": true,
-        "API de almacenamiento (localStorage, sessionStorage)": true
+    ]
+  },
+  "Heber Duarte": {
+    "roadmap": "Frontend Developer",
+    "temas": [
+      {
+        "nombre": "Fundamentos Web",
+        "progreso": {
+          "Internet y cómo funciona": true,
+          "HTTP/HTTPS": true,
+          "Navegadores y motor de renderizado": true,
+          "Herramientas de desarrollo del navegador": false
+        }
+      },
+      {
+        "nombre": "HTML",
+        "progreso": {
+          "Elementos básicos": true,
+          "Formularios y validación": true,
+          "Semántica": true,
+          "SEO básico": true,
+          "Accesibilidad": true,
+          "Multimedia (audio, video, canvas, svg)": true,
+          "API de almacenamiento (localStorage, sessionStorage)": false
+        }
+      },
+      {
+        "nombre": "CSS",
+        "progreso": {
+          "Selectores": true,
+          "Box Model": true,
+          "Flexbox": true,
+          "Grid": false,
+          "Responsive Design": true,
+          "Media Queries": true,
+          "Preprocesadores (Sass, Less)": false,
+          "Variables CSS": true,
+          "Animaciones y transiciones": true,
+          "Frameworks CSS (Bootstrap, Tailwind)": false,
+          "Metodologías (BEM, SMACSS, OOCSS)": false
+        }
+      },
+      {
+        "nombre": "JavaScript",
+        "progreso": {
+          "Sintaxis básica": true,
+          "Tipos de datos": true,
+          "Funciones y closures": true,
+          "Objetos y prototipos": true,
+          "DOM y manipulación": true,
+          "Eventos": true,
+          "Fetch / AJAX": true,
+          "ES6+ (let/const, arrow functions, destructuring, spread/rest, clases, módulos)": true,
+          "Programación asíncrona (callbacks, promesas, async/await)": true,
+          "Manejo de errores": false,
+          "Testing básico (Jest, Mocha)": false,
+          "Herramientas para debugging": false
+        }
+      },
+      {
+        "nombre": "Control de versiones",
+        "progreso": {
+          "Git": true,
+          "GitHub/GitLab/Bitbucket": true,
+          "Branching strategies (Git Flow, GitHub Flow)": false
+        }
+      },
+      {
+        "nombre": "React",
+        "progreso": {
+          "JSX": true,
+          "Componentes funcionales y de clase": true,
+          "Hooks (useState, useEffect, custom hooks)": true,
+          "Routing (React Router)": true,
+          "Estado global (Redux, Context API, MobX)": false,
+          "Testing (React Testing Library, Jest)": false,
+          "Ecosistema (Next.js, Gatsby)": false
+        }
+      },
+      {
+        "nombre": "Vue",
+        "progreso": {
+          "Directivas": false,
+          "Componentes": false,
+          "Vue Router": false,
+          "Vuex (state management)": true,
+          "Composition API": false,
+          "Testing": false
+        }
+      },
+      {
+        "nombre": "Angular",
+        "progreso": {
+          "TypeScript": false,
+          "Componentes": false,
+          "Servicios e Inyección de dependencias": false,
+          "Routing": false,
+          "RxJS (programación reactiva)": false,
+          "Testing": false
+        }
+      },
+      {
+        "nombre": "State Management",
+        "progreso": {
+          "Redux": false,
+          "Vuex": false,
+          "Context API": false
+        }
+      },
+      {
+        "nombre": "Herramientas y bundlers",
+        "progreso": {
+          "NPM/Yarn": false,
+          "Webpack": false,
+          "Babel": true,
+          "ESLint / Prettier": false,
+          "Testing (Jest, React Testing Library, Cypress)": false
+        }
+      },
+      {
+        "nombre": "Optimización y performance",
+        "progreso": {
+          "Lazy loading": false,
+          "Optimización de imágenes": true,
+          "Minificación y bundling": false,
+          "Code splitting": false,
+          "Caching": false,
+          "Service Workers y PWA": false
+        }
+      },
+      {
+        "nombre": "Deployment",
+        "progreso": {
+          "Hosting estático (Netlify, Vercel, GitHub Pages)": true,
+          "CI/CD básico (GitHub Actions, Travis CI)": true
+        }
       }
-    },
-    {
-      "nombre": "CSS",
-      "progreso": {
-        "Selectores": true,
-        "Box Model": false,
-        "Flexbox": true,
-        "Grid": false,
-        "Responsive Design": true,
-        "Media Queries": true,
-        "Preprocesadores (Sass, Less)": true,
-        "Variables CSS": true,
-        "Animaciones y transiciones": true,
-        "Frameworks CSS (Bootstrap, Tailwind)": false,
-        "Metodologías (BEM, SMACSS, OOCSS)": false
+    ]
+  },
+  "Agostina": {
+    "roadmap": "Frontend Developer",
+    "temas": [
+      {
+        "nombre": "Fundamentos Web",
+        "progreso": {
+          "Internet y cómo funciona": true,
+          "HTTP/HTTPS": true,
+          "Navegadores y motor de renderizado": true,
+          "Herramientas de desarrollo del navegador": false
+        }
+      },
+      {
+        "nombre": "HTML",
+        "progreso": {
+          "Elementos básicos": true,
+          "Formularios y validación": true,
+          "Semántica": true,
+          "SEO básico": true,
+          "Accesibilidad": true,
+          "Multimedia (audio, video, canvas, svg)": true,
+          "API de almacenamiento (localStorage, sessionStorage)": false
+        }
+      },
+      {
+        "nombre": "CSS",
+        "progreso": {
+          "Selectores": true,
+          "Box Model": true,
+          "Flexbox": true,
+          "Grid": false,
+          "Responsive Design": true,
+          "Media Queries": true,
+          "Preprocesadores (Sass, Less)": false,
+          "Variables CSS": true,
+          "Animaciones y transiciones": true,
+          "Frameworks CSS (Bootstrap, Tailwind)": false,
+          "Metodologías (BEM, SMACSS, OOCSS)": false
+        }
+      },
+      {
+        "nombre": "JavaScript",
+        "progreso": {
+          "Sintaxis básica": true,
+          "Tipos de datos": true,
+          "Funciones y closures": true,
+          "Objetos y prototipos": true,
+          "DOM y manipulación": true,
+          "Eventos": true,
+          "Fetch / AJAX": true,
+          "ES6+ (let/const, arrow functions, destructuring, spread/rest, clases, módulos)": true,
+          "Programación asíncrona (callbacks, promesas, async/await)": true,
+          "Manejo de errores": false,
+          "Testing básico (Jest, Mocha)": false,
+          "Herramientas para debugging": false
+        }
+      },
+      {
+        "nombre": "Control de versiones",
+        "progreso": {
+          "Git": true,
+          "GitHub/GitLab/Bitbucket": true,
+          "Branching strategies (Git Flow, GitHub Flow)": false
+        }
+      },
+      {
+        "nombre": "React",
+        "progreso": {
+          "JSX": true,
+          "Componentes funcionales y de clase": true,
+          "Hooks (useState, useEffect, custom hooks)": true,
+          "Routing (React Router)": true,
+          "Estado global (Redux, Context API, MobX)": false,
+          "Testing (React Testing Library, Jest)": false,
+          "Ecosistema (Next.js, Gatsby)": false
+        }
+      },
+      {
+        "nombre": "Vue",
+        "progreso": {
+          "Directivas": false,
+          "Componentes": false,
+          "Vue Router": false,
+          "Vuex (state management)": true,
+          "Composition API": false,
+          "Testing": false
+        }
+      },
+      {
+        "nombre": "Angular",
+        "progreso": {
+          "TypeScript": false,
+          "Componentes": false,
+          "Servicios e Inyección de dependencias": false,
+          "Routing": false,
+          "RxJS (programación reactiva)": false,
+          "Testing": false
+        }
+      },
+      {
+        "nombre": "State Management",
+        "progreso": {
+          "Redux": false,
+          "Vuex": false,
+          "Context API": false
+        }
+      },
+      {
+        "nombre": "Herramientas y bundlers",
+        "progreso": {
+          "NPM/Yarn": false,
+          "Webpack": false,
+          "Babel": true,
+          "ESLint / Prettier": false,
+          "Testing (Jest, React Testing Library, Cypress)": false
+        }
+      },
+      {
+        "nombre": "Optimización y performance",
+        "progreso": {
+          "Lazy loading": false,
+          "Optimización de imágenes": true,
+          "Minificación y bundling": false,
+          "Code splitting": false,
+          "Caching": false,
+          "Service Workers y PWA": false
+        }
+      },
+      {
+        "nombre": "Deployment",
+        "progreso": {
+          "Hosting estático (Netlify, Vercel, GitHub Pages)": true,
+          "CI/CD básico (GitHub Actions, Travis CI)": true
+        }
       }
-    },
-    {
-      "nombre": "JavaScript",
-      "progreso": {
-        "Sintaxis básica": false,
-        "Tipos de datos": false,
-        "Funciones y closures": false,
-        "Objetos y prototipos": false,
-        "DOM y manipulación": false,
-        "Eventos": false,
-        "Fetch / AJAX": false,
-        "ES6+ (let/const, arrow functions, destructuring, spread/rest, clases, módulos)": false,
-        "Programación asíncrona (callbacks, promesas, async/await)": false,
-        "Manejo de errores": true,
-        "Testing básico (Jest, Mocha)": true,
-        "Herramientas para debugging": false
+    ]
+  },
+  "Eli": {
+    "roadmap": "Frontend Developer",
+    "temas": [
+      {
+        "nombre": "Fundamentos Web",
+        "progreso": {
+          "Internet y cómo funciona": true,
+          "HTTP/HTTPS": true,
+          "Navegadores y motor de renderizado": true,
+          "Herramientas de desarrollo del navegador": false
+        }
+      },
+      {
+        "nombre": "HTML",
+        "progreso": {
+          "Elementos básicos": true,
+          "Formularios y validación": true,
+          "Semántica": true,
+          "SEO básico": true,
+          "Accesibilidad": true,
+          "Multimedia (audio, video, canvas, svg)": true,
+          "API de almacenamiento (localStorage, sessionStorage)": false
+        }
+      },
+      {
+        "nombre": "CSS",
+        "progreso": {
+          "Selectores": true,
+          "Box Model": true,
+          "Flexbox": true,
+          "Grid": false,
+          "Responsive Design": true,
+          "Media Queries": true,
+          "Preprocesadores (Sass, Less)": false,
+          "Variables CSS": true,
+          "Animaciones y transiciones": true,
+          "Frameworks CSS (Bootstrap, Tailwind)": false,
+          "Metodologías (BEM, SMACSS, OOCSS)": false
+        }
+      },
+      {
+        "nombre": "JavaScript",
+        "progreso": {
+          "Sintaxis básica": true,
+          "Tipos de datos": true,
+          "Funciones y closures": true,
+          "Objetos y prototipos": true,
+          "DOM y manipulación": true,
+          "Eventos": true,
+          "Fetch / AJAX": true,
+          "ES6+ (let/const, arrow functions, destructuring, spread/rest, clases, módulos)": true,
+          "Programación asíncrona (callbacks, promesas, async/await)": true,
+          "Manejo de errores": false,
+          "Testing básico (Jest, Mocha)": false,
+          "Herramientas para debugging": false
+        }
+      },
+      {
+        "nombre": "Control de versiones",
+        "progreso": {
+          "Git": true,
+          "GitHub/GitLab/Bitbucket": true,
+          "Branching strategies (Git Flow, GitHub Flow)": false
+        }
+      },
+      {
+        "nombre": "React",
+        "progreso": {
+          "JSX": true,
+          "Componentes funcionales y de clase": true,
+          "Hooks (useState, useEffect, custom hooks)": true,
+          "Routing (React Router)": true,
+          "Estado global (Redux, Context API, MobX)": false,
+          "Testing (React Testing Library, Jest)": false,
+          "Ecosistema (Next.js, Gatsby)": false
+        }
+      },
+      {
+        "nombre": "Vue",
+        "progreso": {
+          "Directivas": false,
+          "Componentes": false,
+          "Vue Router": false,
+          "Vuex (state management)": true,
+          "Composition API": false,
+          "Testing": false
+        }
+      },
+      {
+        "nombre": "Angular",
+        "progreso": {
+          "TypeScript": false,
+          "Componentes": false,
+          "Servicios e Inyección de dependencias": false,
+          "Routing": false,
+          "RxJS (programación reactiva)": false,
+          "Testing": false
+        }
+      },
+      {
+        "nombre": "State Management",
+        "progreso": {
+          "Redux": false,
+          "Vuex": false,
+          "Context API": false
+        }
+      },
+      {
+        "nombre": "Herramientas y bundlers",
+        "progreso": {
+          "NPM/Yarn": false,
+          "Webpack": false,
+          "Babel": true,
+          "ESLint / Prettier": false,
+          "Testing (Jest, React Testing Library, Cypress)": false
+        }
+      },
+      {
+        "nombre": "Optimización y performance",
+        "progreso": {
+          "Lazy loading": false,
+          "Optimización de imágenes": true,
+          "Minificación y bundling": false,
+          "Code splitting": false,
+          "Caching": false,
+          "Service Workers y PWA": false
+        }
+      },
+      {
+        "nombre": "Deployment",
+        "progreso": {
+          "Hosting estático (Netlify, Vercel, GitHub Pages)": true,
+          "CI/CD básico (GitHub Actions, Travis CI)": true
+        }
       }
-    },
-    {
-      "nombre": "Control de versiones",
-      "progreso": {
-        "Git": false,
-        "GitHub/GitLab/Bitbucket": true,
-        "Branching strategies (Git Flow, GitHub Flow)": false
-      }
-    },
-    {
-      "nombre": "React",
-      "progreso": {
-        "JSX": false,
-        "Componentes funcionales y de clase": true,
-        "Hooks (useState, useEffect, custom hooks)": false,
-        "Routing (React Router)": true,
-        "Estado global (Redux, Context API, MobX)": false,
-        "Testing (React Testing Library, Jest)": true,
-        "Ecosistema (Next.js, Gatsby)": false
-      }
-    },
-    {
-      "nombre": "Vue",
-      "progreso": {
-        "Directivas": false,
-        "Componentes": false,
-        "Vue Router": true,
-        "Vuex (state management)": true,
-        "Composition API": true,
-        "Testing": false
-      }
-    },
-    {
-      "nombre": "Angular",
-      "progreso": {
-        "TypeScript": false,
-        "Componentes": false,
-        "Servicios e Inyección de dependencias": false,
-        "Routing": false,
-        "RxJS (programación reactiva)": true,
-        "Testing": true
-      }
-    },
-    {
-      "nombre": "State Management",
-      "progreso": {
-        "Redux": true,
-        "Vuex": true,
-        "Context API": true
-      }
-    },
-    {
-      "nombre": "Herramientas y bundlers",
-      "progreso": {
-        "NPM/Yarn": false,
-        "Webpack": false,
-        "Babel": false,
-        "ESLint / Prettier": false,
-        "Testing (Jest, React Testing Library, Cypress)": false
-      }
-    },
-    {
-      "nombre": "Optimización y performance",
-      "progreso": {
-        "Lazy loading": false,
-        "Optimización de imágenes": true,
-        "Minificación y bundling": false,
-        "Code splitting": false,
-        "Caching": true,
-        "Service Workers y PWA": false
-      }
-    },
-    {
-      "nombre": "Deployment",
-      "progreso": {
-        "Hosting estático (Netlify, Vercel, GitHub Pages)": false,
-        "CI/CD básico (GitHub Actions, Travis CI)": true
-      }
-    }
-  ]
+    ]
+  }
 }
