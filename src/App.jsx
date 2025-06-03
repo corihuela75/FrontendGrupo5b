@@ -3,6 +3,7 @@ import Container from "./containers/Container";
 import Presentation from "./pages/Presentation";
 import Roadmap from "./pages/Roadmap";
 import Home from "./pages/Home";
+import Api from "./pages/Api";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
           <Route path="home" element={<Home />} />
           <Route path="presentation" element={<Presentation />} />
           <Route path="roadmap" element={<Roadmap />} />
+          <Route path="api" element={<Api />} />
         </Route>
         <Route path="*" element={<Navigate to="/home" replace />} />
       </Routes>
