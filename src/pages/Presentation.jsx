@@ -1,11 +1,10 @@
+import members from "../data/members.json";
 import { Mail, Github } from "lucide-react";
 import { Button } from "../components/ui/button";
 import TeamCard from "../components/TeamCard";
 import ProfileCard from "../components/ProfileCard";
-import { useState } from "react";
+import { Roadmap } from "./Roadmap"; // Asegurate de ajustar el path si está en otra carpeta
 
-export default function Presentation() {
-  const [selectedMember, setSelectedMember] = useState(null);
 
 const teamMembers = [
   {
@@ -130,37 +129,48 @@ const teamMembers = [
   }
 ];
 
+import { useState } from "react";
 
+export default function Presentation() {
+  const [selectedMember, setSelectedMember] = useState(null);
 
   return (
     <section className="min-h-screen bg-gray-100 p-8">
+
+      {/* Header */}
+
       <div className="max-w-4xl mx-auto">
         <header className="mb-12 text-center">
           <h1 className="text-4xl font-bold mb-2">Hola! somos el grupo 5</h1>
           <p className="text-lg text-gray-600"> de la materia: Desarrollo de Sistemas Web - Front End</p>
+
+      {/* Botones */}
+
           <div className="mt-4 flex justify-center gap-4">
-            <Button variant="outline">
+            <Button variant="outline" onClick={() => window.open("https://mi-bitacora.com", "_blank")}>
               <Mail className="w-4 h-4 mr-2" /> Mirá nuestra Bitacora
             </Button>
-            <Button variant="outline">
-              <Github className="w-4 h-4 mr-2" /> ir al repo en GitHub
+            <Button variant="outline" onClick={() => window.open("https://github.com/agostinapoli/FrontendGrupo5", "_blank")}>
+              <Github className="w-4 h-4 mr-2" /> Ir al repo en GitHub
             </Button>
           </div>
         </header>
 
+      {/* Lista de integrantes o perfil individual */}
 
         <section className="mb-12">
-          <h2 className="text-2xl font-semibold mb-4">Integrantes del equipo:</h2>
+          {/* <h2 className="text-2xl font-semibold mb-4">Integrantes del equipo:</h2> */}
           {!selectedMember && (
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-              {teamMembers.map((member, index) => (
-                <TeamCard key={index} member={member} onClick={() => setSelectedMember(member)} />
+              {members.map((member, index) => (
+                <TeamCard key={member.name} member={member} onClick={() => setSelectedMember(member)} />
               ))}
             </div>
           )}
           {selectedMember && (
             <div className="mt-8">
               <ProfileCard member={selectedMember} onClose={() => setSelectedMember(null)} />
+              <Roadmap integrante={selectedMember.name} />
             </div>
           )}
         </section>
