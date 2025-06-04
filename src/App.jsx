@@ -5,6 +5,7 @@ import Roadmap from "./pages/Roadmap";
 import Home from "./pages/Home";
 import Api from "./pages/Api";
 import Bitacora from "./pages/BitacoraTrabajo";
+import Profile from "./components/Profile";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
         <Route path="/" element={<Container />}>
           <Route index element={<Navigate to="/home" replace />} />
           <Route path="home" element={<Home />} />
+          <Route path="presentation/:id" element={<Profile />} />
           <Route path="presentation" element={<Presentation />} />
           <Route path="roadmap" element={<Roadmap />} />
           <Route path="api" element={<Api />} />

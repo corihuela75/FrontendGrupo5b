@@ -1,15 +1,14 @@
-import members from "../data/members.json";
+import members from "./../data/members.json";
 import { Mail, Github } from "lucide-react";
 import { Button } from "../components/ui/button";
 import TeamCard from "../components/TeamCard";
-import ProfileCard from "../components/ProfileCard";
-import { Roadmap } from "./Roadmap"; // Ajusta el path si es necesario
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";  // <-- Importa useNavigate
+import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+
 
 export default function Presentation() {
-  const [selectedMember, setSelectedMember] = useState(null);
-  const navigate = useNavigate();  // <-- Inicializa useNavigate
+  const navigate = useNavigate();
+
 
   return (
     <section className="min-h-screen bg-gray-100 p-8">
@@ -37,23 +36,16 @@ export default function Presentation() {
 
         {/* Lista de integrantes o perfil individual */}
         <section className="mb-12">
-          {!selectedMember && (
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-              {members.map((member) => (
-                <TeamCard
-                  key={member.name}
-                  member={member}
-                  onClick={() => setSelectedMember(member)}
-                />
-              ))}
-            </div>
-          )}
-          {selectedMember && (
-            <div className="mt-8">
-              <ProfileCard member={selectedMember} onClose={() => setSelectedMember(null)} />
-              <Roadmap integrante={selectedMember.name} />
-            </div>
-          )}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+            {members.map((member) => (
+
+              <Link to={`/presentation/${member.id}`}>
+                <TeamCard key={member.name} member={member} />
+              </Link>
+
+
+            ))}
+          </div>
         </section>
       </div>
     </section>
