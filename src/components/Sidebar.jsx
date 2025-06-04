@@ -26,7 +26,7 @@ export function Sidebar() {
   return (
     <>
       {isMobile && (
-        <IconButton variant="text" size="lg" onClick={openDrawer}>
+        <IconButton variant="text" size="lg" className="fixed top-2 left-2 p-4" onClick={openDrawer}>
           {isDrawerOpen ? (
             <XMarkIcon className="h-8 w-8 stroke-2" />
           ) : (
@@ -36,7 +36,7 @@ export function Sidebar() {
       )}
       {( isMobile ?(
         <Drawer open={isDrawerOpen} onClose={closeDrawer}  >
-        <CardSidebar></CardSidebar>
+        <CardSidebar close={closeDrawer} ></CardSidebar>
       </Drawer>
       ) :(
         <CardSidebar></CardSidebar>

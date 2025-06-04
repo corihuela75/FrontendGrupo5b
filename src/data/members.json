@@ -1,5 +1,6 @@
 [
   {
+    "id":"1",
     "name": "Eli",
     "role": "Domadora de michis",
     "image": "/images/profiles-photo/Eli.jpg",
@@ -30,6 +31,7 @@
     }
   },
   {
+    "id":"2",
     "name": "Agostina",
     "role": "Professional Instagrammer",
     "image": "/images/profiles-photo/Agos.jpg",
@@ -50,7 +52,7 @@
         "company": "Freelance",
         "role": "Community Manager",
         "period": "2017 - 2020",
-        "description": "Administración de marcas personales, planificación de contenido y métricas."
+        "description": "Administración de marcas personales, planificación de contenido y métricas"
       }
     ],
     "contact": {
@@ -60,6 +62,7 @@
     }
   },
   {
+    "id":"3",
     "name": "Heber Duarte",
     "role": "Angular & React Developer",
     "image": "/images/profiles-photo/profile_heber.jpg",
@@ -67,29 +70,30 @@
     "social_media": {
       "github": "https://github.com/Heber-739",
       "linkedin": "https://www.linkedin.com/in/heber739/",
-      "instagram": "https://www.instagram.com/heber.dev"
+      "instagram": "https://www.instagram.com/heberd.56"
     },
     "experience": [
       {
-        "company": "EDUCONEXION",
+        "company": "ICBC Argentina",
         "role": "Desarrollador Frontend",
-        "period": "2021 - Presente",
-        "description": "Desarrollo de interfaces en React y Angular, con enfoque en UX y performance."
+        "period": "2023 - Presente",
+        "description": "Desarrollo y mantenimiento de micro front end en Angular"
       },
       {
-        "company": "SoftDev SRL",
-        "role": "Desarrollador Junior",
-        "period": "2019 - 2021",
-        "description": "Soporte en proyectos web y mantenimiento de aplicaciones en Angular."
+        "company": "Mobydigital",
+        "role": "Desarrollador Frontend",
+        "period": "2023 - presente",
+        "description": "Soporte en proyectos web con javascript y desarrollos en Angular."
       }
     ],
     "contact": {
-      "email": "heber.duarte@example.com",
-      "phone": "+54 11 3210-6543",
-      "location": "Mendoza, Argentina"
+      "email": "heberduarteryr@gmail.com",
+      "phone": "+54 3764-273300",
+      "location": "Misiones, Argentina"
     }
   },
   {
+    "id":"4",
     "name": "Cristian Orihuela",
     "role": "Administrativo-contable",
     "image": "/images/profiles-photo/cris.jpg",

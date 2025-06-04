@@ -145,7 +145,7 @@
           "Internet y cómo funciona": true,
           "HTTP/HTTPS": true,
           "Navegadores y motor de renderizado": true,
-          "Herramientas de desarrollo del navegador": false
+          "Herramientas de desarrollo del navegador": true
         }
       },
       {
@@ -157,7 +157,7 @@
           "SEO básico": true,
           "Accesibilidad": true,
           "Multimedia (audio, video, canvas, svg)": true,
-          "API de almacenamiento (localStorage, sessionStorage)": false
+          "API de almacenamiento (localStorage, sessionStorage)": true
         }
       },
       {
@@ -166,13 +166,13 @@
           "Selectores": true,
           "Box Model": true,
           "Flexbox": true,
-          "Grid": false,
+          "Grid": true,
           "Responsive Design": true,
           "Media Queries": true,
-          "Preprocesadores (Sass, Less)": false,
+          "Preprocesadores (Sass, Less)": true,
           "Variables CSS": true,
           "Animaciones y transiciones": true,
-          "Frameworks CSS (Bootstrap, Tailwind)": false,
+          "Frameworks CSS (Bootstrap, Tailwind)": true,
           "Metodologías (BEM, SMACSS, OOCSS)": false
         }
       },
@@ -188,9 +188,9 @@
           "Fetch / AJAX": true,
           "ES6+ (let/const, arrow functions, destructuring, spread/rest, clases, módulos)": true,
           "Programación asíncrona (callbacks, promesas, async/await)": true,
-          "Manejo de errores": false,
-          "Testing básico (Jest, Mocha)": false,
-          "Herramientas para debugging": false
+          "Manejo de errores": true,
+          "Testing básico (Jest, Mocha)": true,
+          "Herramientas para debugging": true
         }
       },
       {
@@ -198,7 +198,7 @@
         "progreso": {
           "Git": true,
           "GitHub/GitLab/Bitbucket": true,
-          "Branching strategies (Git Flow, GitHub Flow)": false
+          "Branching strategies (Git Flow, GitHub Flow)": true
         }
       },
       {
@@ -219,7 +219,7 @@
           "Directivas": false,
           "Componentes": false,
           "Vue Router": false,
-          "Vuex (state management)": true,
+          "Vuex (state management)": false,
           "Composition API": false,
           "Testing": false
         }
@@ -227,18 +227,18 @@
       {
         "nombre": "Angular",
         "progreso": {
-          "TypeScript": false,
-          "Componentes": false,
-          "Servicios e Inyección de dependencias": false,
-          "Routing": false,
-          "RxJS (programación reactiva)": false,
-          "Testing": false
+          "TypeScript": true,
+          "Componentes": true,
+          "Servicios e Inyección de dependencias": true,
+          "Routing": true,
+          "RxJS (programación reactiva)": true,
+          "Testing": true
         }
       },
       {
         "nombre": "State Management",
         "progreso": {
-          "Redux": false,
+          "Redux": true,
           "Vuex": false,
           "Context API": false
         }
@@ -246,22 +246,22 @@
       {
         "nombre": "Herramientas y bundlers",
         "progreso": {
-          "NPM/Yarn": false,
-          "Webpack": false,
-          "Babel": true,
-          "ESLint / Prettier": false,
-          "Testing (Jest, React Testing Library, Cypress)": false
+          "NPM/Yarn": true,
+          "Webpack": true,
+          "Babel": false,
+          "ESLint / Prettier": true,
+          "Testing (Jest, React Testing Library, Cypress)": true
         }
       },
       {
         "nombre": "Optimización y performance",
         "progreso": {
-          "Lazy loading": false,
+          "Lazy loading": true,
           "Optimización de imágenes": true,
-          "Minificación y bundling": false,
+          "Minificación y bundling": true,
           "Code splitting": false,
-          "Caching": false,
-          "Service Workers y PWA": false
+          "Caching": true,
+          "Service Workers y PWA": true
         }
       },
       {

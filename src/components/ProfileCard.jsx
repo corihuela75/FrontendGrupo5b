@@ -1,8 +1,9 @@
-// components/ProfileCard.jsx
 
 // TARJETA DE PERFIL DE MIEMBRO DEL EQUIPO (AMPLIADA)
 
-export default function ProfileCard({ member, onClose }) {
+import { Link } from "react-router-dom";
+
+export default function ProfileCard({ member }) {
   return (
     <div className="mt-8 p-6 bg-white rounded-xl border border-gray-200">
       {/* Encabezado */}
@@ -59,12 +60,13 @@ export default function ProfileCard({ member, onClose }) {
 
       {/* Botón */}
       <div className="text-center">
+        <Link to="/presentation">
         <button
           className="mt-6 px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
-          onClick={onClose}
-        >
+          >
           Cerrar perfil
         </button>
+          </Link>
       </div>
     </div>
   );
