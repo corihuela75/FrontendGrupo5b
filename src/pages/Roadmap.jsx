@@ -1,13 +1,9 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import roadmapDataByMember from "../data/roadmap";
+import data from './../data/members.json'
 
 // Datos de integrantes (foto, nombre)
-const members = [
-  { name: "Eli", image: "/images/profiles-photo/Eli.jpg" },
-  { name: "Agostina", image: "/images/profiles-photo/Agos.jpg" },
-  { name: "Heber Duarte", image: "/images/profiles-photo/profile_heber.jpg" },
-  { name: "Cristian Orihuela", image: "/images/profiles-photo/cris.jpg" },
-];
+const members = data.map((m)=> { return { name: m.name, image: m.image } })
 
 // Función para renderizar progreso
 function renderProgreso(progreso) {
