@@ -356,7 +356,7 @@
           "Directivas": false,
           "Componentes": false,
           "Vue Router": false,
-          "Vuex (state management)": true,
+          "Vuex (state management)": false,
           "Composition API": false,
           "Testing": false
         }
@@ -480,8 +480,8 @@
         "progreso": {
           "JSX": true,
           "Componentes funcionales y de clase": true,
-          "Hooks (useState, useEffect, custom hooks)": true,
-          "Routing (React Router)": true,
+          "Hooks (useState, useEffect, custom hooks)": false,
+          "Routing (React Router)": false,
           "Estado global (Redux, Context API, MobX)": false,
           "Testing (React Testing Library, Jest)": false,
           "Ecosistema (Next.js, Gatsby)": false
@@ -493,7 +493,7 @@
           "Directivas": false,
           "Componentes": false,
           "Vue Router": false,
-          "Vuex (state management)": true,
+          "Vuex (state management)": false,
           "Composition API": false,
           "Testing": false
         }
@@ -541,7 +541,7 @@
       {
         "nombre": "Deployment",
         "progreso": {
-          "Hosting estático (Netlify, Vercel, GitHub Pages)": true,
+          "Hosting estático (Netlify, Vercel, GitHub Pages)": false,
           "CI/CD básico (GitHub Actions, Travis CI)": true
         }
       }

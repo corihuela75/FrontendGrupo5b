@@ -1,11 +1,11 @@
 [
   {
     "name": "Eli",
-    "role": "Domadora de michis",
+    "role": "Abogada en transición tecnológica",
     "image": "/images/profiles-photo/Eli.jpg",
-    "bio": "Eli es nuestra gurú de la calma felina, siempre lista para traer armonía al equipo.",
+    "bio": "Conectando el mundo legal con regulación digital y protección de datos para impulsar proyectos seguros e innovadores.",
     "social_media": {
-      "github": "https://github.com/eli-catmaster",
+      "github": "https://github.com/LizGeno",
       "linkedin": "https://www.linkedin.com/in/eli-catmaster",
       "instagram": "https://www.instagram.com/eli.y.michis"
     },
@@ -26,7 +26,7 @@
     "contact": {
       "email": "eli.michis@example.com",
       "phone": "+54 11 2345-6789",
-      "location": "Córdoba, Argentina"
+      "location": "Corrientes, Argentina"
     }
   },
   {
