@@ -4,6 +4,7 @@ import Presentation from "./pages/Presentation";
 import Roadmap from "./pages/Roadmap";
 import Home from "./pages/Home";
 import Api from "./pages/Api";
+import Bitacora from "./pages/BitacoraTrabajo";
 import Profile from "./components/Profile";
 
 export default function App() {
@@ -18,6 +19,7 @@ export default function App() {
           <Route path="presentation" element={<Presentation />} />
           <Route path="roadmap" element={<Roadmap />} />
           <Route path="api" element={<Api />} />
+          <Route path="bitacora" element={<Bitacora />} />
         </Route>
         <Route path="*" element={<Navigate to="/home" replace />} />
       </Routes>
