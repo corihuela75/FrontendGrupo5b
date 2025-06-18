@@ -1,49 +1,113 @@
-## Requisitos previos
+# 🚀 TP Grupal 2 - SPA en React
 
-Antes de comenzar, asegurate de tener instalado:
+## 📚 Descripción del Proyecto
 
-- [Node.js](https://nodejs.org/) (versión 16 o superior recomendada)
-- Git
-  
-## Cómo clonar y ejecutar el proyecto
-### 1. Clonar el repositorio
-   
-`git clone https://github.com/agostinapoli/FrontendGrupo5.git`
+Este proyecto es una aplicación web desarrollada en **React** como evolución del trabajo práctico anterior. Implementamos una **Single Page Application (SPA)** que presenta contenidos ficticios del equipo, combinando animaciones, componentes reutilizables, consumo de datos y mejoras visuales.
 
-### 2. Entrar al directorio del proyecto
+---
 
-`cd FrontendGrupo5`
+## 👨‍💻 Integrantes del Grupo
 
-### 3. Instalar dependencias
+- Cristian Orihuela  
+- Agostina Poli  
+- Heber Duarte
 
-`npm install`
+**Comisión D - Grupo 3**
 
-### 4. Ejecutar el servidor de desarrollo
+---
 
-`npm run dev`
+## 🌐 Links de 2da. Entrega
 
+- 📁 Repositorio en GitHub : https://github.com/corihuela75/FrontendGrupo5
+- 🚀 Sitio publicado en Vercel : https://frontend2-grupo5.vercel.app/
+
+## 🌐 Links de 1ra. Entrega
+
+- 📁 Repositorio en GitHub : https://github.com/agostinapoli/FrontendGrupo5
+- 🚀 Sitio publicado en Vercel : https://frontend-grupo5.vercel.app/
+
+---
+
+## 🔧 Tecnologías Utilizadas
+
+- React.js (Vite)
+- JavaScript
+- HTML5 + CSS3
+- Vercel (deploy)
+
+---
+
+## ✨ Mejoras implementadas
+
+A continuación detallamos las **4 mejoras** aplicadas al proyecto, elegidas del listado propuesto:
+
+---
+
+### 1. 🎨 Mejora de Interfaz: Animaciones Suaves
+
+- Se aplicaron **transiciones animadas** al cargar tarjetas y al navegar entre rutas.
+- Se añadieron **efectos `hover`** a los botones y elementos interactivos.
+- Herramientas utilizadas: CSS personalizado y Animate.css.
+- **Justificación:** Aporta fluidez y profesionalismo al sitio.
+
+---
+
+### 2. 🔍 Búsqueda y Filtros en JSON Local
+
+- Se creó un **buscador por texto** que filtra en tiempo real los datos (ej: miembros del equipo, habilidades o proyectos).
+- También se implementaron **filtros por categoría** usando selectores desplegables (`<select>`).
+- **Justificación:** Mejora la accesibilidad y permite al usuario encontrar contenido relevante fácilmente.
+
+---
+
+### 3. 📄 Paginación para API Externa
+
+- La app consume una API (ej: Rick and Morty API) y permite paginar resultados usando botones Anterior / Siguiente.
+- Se muestra el número de página actual.
+- **Justificación:** Permite manejar grandes volúmenes de datos sin recargar el DOM.
+
+---
+
+### 4. 📷 Galería de Imágenes Interactiva
+
+- Se diseñó una galería de imágenes en `grid`.
+- Al hacer clic, se abre un **lightbox** con vista ampliada y botones para navegar entre imágenes.
+- También se puede cerrar con un botón o tecla `ESC`.
+- **Justificación:** Enriquece la presentación visual de los contenidos.
+
+---
+
+## 🖼️ Capturas del Proyecto
+
+### 🎥 Página de inicio animada  
+![Inicio](./assets/captura-inicio.png)
+
+### 🔎 Buscador activo  
+![Buscador](./assets/captura-busqueda.png)
+
+### 📄 API con paginación  
+![API](./assets/captura-api.png)
+
+### 🖼️ Lightbox interactivo  
+![Galería](./assets/captura-galeria.png)
 
 
 ---
 
-# CAMBIOS RAMA ORI1 (16/05/2025)
-- Nuevo logo
-- Modificacion de rutas de la imagenes para que se vean en Vercel
-- Actualizacion datos tarjeta Cristian
-- Cambio texto presentacion
-- Ajuste imagenes de los perfiles
+## ✅ Evaluación cumplida
 
+- [x] Adaptabilidad a dispositivos móviles
+- [x] Bitácora clara de cambios
+- [x] Publicación en GitHub y Vercel
+- [x] Uso de componentes, estados y props
 
+---
 
-# React + Vite
+## 📌 Notas adicionales
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- El proyecto fue desarrollado en equipo usando Git y GitHub, dividiendo tareas por componentes y rutas.
+- Todos los datos se cargan desde un JSON local o desde la API externa.
+- La SPA no requiere recarga completa del navegador gracias a React Router DOM.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.

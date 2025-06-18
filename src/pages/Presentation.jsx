@@ -13,7 +13,7 @@ export default function Presentation() {
   return (
     <section className="min-h-screen bg-gray-100 p-8">
       {/* Header */}
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <header className="mb-12 text-center">
           <h1 className="text-4xl font-bold mb-2">Hola! somos el grupo 5</h1>
           <p className="text-lg text-gray-600"> de la materia: Desarrollo de Sistemas Web - Front End</p>

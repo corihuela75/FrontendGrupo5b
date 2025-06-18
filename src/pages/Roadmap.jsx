@@ -3,7 +3,7 @@ import roadmapDataByMember from "../data/roadmap";
 import data from './../data/members.json'
 
 // Datos de integrantes (foto, nombre)
-const members = data.map((m)=> { return { name: m.name, image: m.image } })
+const members = data.map((m) => ({ name: m.name, image: m.image }));
 
 // Función para renderizar progreso
 function renderProgreso(progreso) {
@@ -43,20 +43,64 @@ function renderProgreso(progreso) {
 // Componente Roadmap que recibe datos para mostrar
 function Roadmap({ integrante }) {
   const data = roadmapDataByMember[integrante];
+  const [searchTerm, setSearchTerm] = useState("");
+  const [selectedCategory, setSelectedCategory] = useState("");
+
   if (!data) return <p className="mt-4 text-center">No hay roadmap disponible</p>;
 
+  // Filtrar temas según búsqueda y categoría
+  const filteredTemas = data.temas.filter((tema) => {
+    const matchesSearch = tema.nombre.toLowerCase().includes(searchTerm.toLowerCase());
+    const matchesCategory = selectedCategory ? tema.nombre === selectedCategory : true;
+    return matchesSearch && matchesCategory;
+  });
+
+  // Obtener categorías para el desplegable
+  const categorias = Array.from(new Set(data.temas.map((tema) => tema.nombre)));
+
   return (
-    <div className="p-6 max-w-4xl mx-auto mt-8 bg-white rounded-xl border border-gray-200 shadow-md">
-      <h2 className="text-2xl font-bold text-blue-700 mb-6 text-center">
+    <div className="p-6 max-w-6xl mx-auto mt-8 bg-white rounded-xl border border-gray-200 shadow-md">
+      <h2 className="text-2xl font-bold text-black-700 mb-6 text-center">
         Roadmap de {integrante}: {data.roadmap}
       </h2>
+
+      {/* Contenedor vertical con espacio pequeño */}
+      <div className="flex flex-col space-y-3 mb-6 max-w-sm mx-auto">
+        {/* Cuadro de búsqueda */}
+        <input
+          type="text"
+          placeholder="Buscar tema..."
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+          className="px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition"
+        />
+
+        {/* Desplegable de categorías */}
+        <select
+          value={selectedCategory}
+          onChange={(e) => setSelectedCategory(e.target.value)}
+          className="px-4 py-2 rounded-md border border-gray-300 bg-white focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition"
+        >
+          <option value="">Todas las categorías</option>
+          {categorias.map((cat) => (
+            <option key={cat} value={cat}>
+              {cat}
+            </option>
+          ))}
+        </select>
+      </div>
+
       <ul className="space-y-6">
-        {data.temas.map((tema, idx) => (
-          <li key={idx} className="p-4 bg-gray-50 rounded-lg border border-gray-100">
-            <h3 className="text-xl font-semibold text-blue-800 mb-3 text-center">{tema.nombre}</h3>
-            {renderProgreso(tema.progreso)}
-          </li>
-        ))}
+        {filteredTemas.length > 0 ? (
+          filteredTemas.map((tema, idx) => (
+            <li key={idx} className="p-4 bg-gray-50 rounded-lg border border-gray-100">
+              <h3 className="text-xl font-semibold text-blue-800 mb-3 text-center">{tema.nombre}</h3>
+              {renderProgreso(tema.progreso)}
+            </li>
+          ))
+        ) : (
+          <p className="text-center text-gray-500">No se encontraron temas que coincidan.</p>
+        )}
       </ul>
     </div>
   );
@@ -70,7 +114,7 @@ export default function TeamWithRoadmap() {
     <div className="max-w-5xl mx-auto p-6">
       <header className="mb-12 text-center">
         <h1 className="text-4xl font-bold mb-2">Nuestras rutas de aprendizaje</h1>
-        <p className="text-lg text-gray-600"> a lo largo del camino del desarrollo web Front End</p>
+        <p className="text-lg text-gray-600">a lo largo del camino del desarrollo web Front End</p>
       </header>
       <div className="flex justify-center gap-8 flex-wrap mb-10">
         {members.map((member) => (

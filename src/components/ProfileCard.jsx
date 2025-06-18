@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export default function ProfileCard({ member }) {
   return (
-    <div className="mt-8 p-6 bg-white rounded-xl border border-gray-200">
+    <div className="p-6 max-w-6xl mx-auto mt-8 bg-white rounded-xl border border-gray-200 shadow-md">
       {/* Encabezado */}
       <div className="flex flex-col items-center text-center gap-4">
         <img
