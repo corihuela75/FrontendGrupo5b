@@ -8,9 +8,11 @@ Este proyecto es una aplicación web desarrollada en **React** como evolución d
 
 ## 👨‍💻 Integrantes del Grupo
 
-- Cristian Orihuela  
+
 - Agostina Poli  
+- Elizabeth Geno 
 - Heber Duarte
+- Cristian Orihuela  
 
 **Comisión D - Grupo 3**
 
@@ -23,8 +25,8 @@ Este proyecto es una aplicación web desarrollada en **React** como evolución d
 
 ## 🌐 Links de 1ra. Entrega
 
-- 📁 Repositorio en GitHub : https://github.com/agostinapoli/FrontendGrupo5
-- 🚀 Sitio publicado en Vercel : https://frontend-grupo5.vercel.app/
+- 📁 Repositorio en GitHub : https://github.com/agostinapoli/FrontendGrupo5b
+- 🚀 Sitio publicado en Vercel : https://frontend-grupo5b.vercel.app/
 
 ---
 
