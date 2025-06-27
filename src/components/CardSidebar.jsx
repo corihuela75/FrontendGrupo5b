@@ -114,6 +114,27 @@ export function CardSidebar({ close }) {
             Application API
           </ListItem>
         </Link>
+
+        <Link to="/bitacora">
+          <ListItem onClick={() => close()} className="font-bold text-lg">
+            <ListItemPrefix>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                className="w-6 h-6"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M6 3.75A2.25 2.25 0 0 0 3.75 6v12A2.25 2.25 0 0 0 6 20.25h12A2.25 2.25 0 0 0 20.25 18V6A2.25 2.25 0 0 0 18 3.75H6ZM5.25 6A.75.75 0 0 1 6 5.25h12a.75.75 0 0 1 .75.75v10.5H5.25V6ZM5.25 18v-.75h13.5v.75a.75.75 0 0 1-.75.75H6a.75.75 0 0 1-.75-.75Z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </ListItemPrefix>
+            Bitácora
+          </ListItem>
+        </Link>
+
       </List>
     </Card>
   );
