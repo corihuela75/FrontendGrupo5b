@@ -134,6 +134,7 @@ export default function TeamWithRoadmap() {
       </div>
 
       {selectedMember && <Roadmap integrante={selectedMember} />}
+      <p className="text-lg text-gray-600 text-center">Hacé click en alguna de las fotos para desplegar el Roadmap</p>
     </div>
   );
 }

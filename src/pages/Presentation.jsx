@@ -26,7 +26,7 @@ export default function Presentation() {
             <Button
               variant="outline"
               onClick={() =>
-                window.open("https://github.com/agostinapoli/FrontendGrupo5", "_blank")
+                window.open("https://github.com/corihuela75/FrontendGrupo5b", "_blank")
               }
             >
               <Github className="w-4 h-4 mr-2" /> Ir al repo en GitHub
