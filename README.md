@@ -92,38 +92,42 @@ El trabajo en equipo se desarrolló con fluidez y compromiso.
 A continuación detallamos las **4 mejoras** aplicadas al proyecto, elegidas del listado propuesto:
 
 
+### 1. Mejora de la Interfaz: Animaciones Suaves
 
-### 1. 🎨 Mejora de Interfaz: Animaciones Suaves
-
-- Se aplicaron **transiciones animadas** al cargar tarjetas y al navegar entre rutas.
-- Se añadieron **efectos `hover`** a los botones y elementos interactivos.
-- Herramientas utilizadas: CSS personalizado y Animate.css.
-- **Justificación:** Aporta fluidez y profesionalismo al sitio.
+- Se añadieron **transiciones suaves** en la carga de tarjetas y al navegar entre páginas para que el contenido aparezca de forma más fluida y atractiva.  
+- Se implementaron **efectos hover** en botones y tarjetas que resaltan elementos interactivos cuando el cursor pasa sobre ellos, mejorando la usabilidad.  
+- Para esto, se usó **CSS puro**, con transiciones en propiedades como `opacity`, `transform` y `box-shadow`.  
 
 
 
-### 2. 🔍 Búsqueda y Filtros en JSON Local
+### 2. Búsqueda/Filtrado en JSON Local
 
-- Se creó un **buscador por texto** que filtra en tiempo real los datos (ej: miembros del equipo, habilidades o proyectos).
-- También se implementaron **filtros por categoría** usando selectores desplegables (`<select>`).
-- **Justificación:** Mejora la accesibilidad y permite al usuario encontrar contenido relevante fácilmente.
-
-
-
-### 3. 📄 Paginación para API Externa
-
-- La app consume una API (ej: Rick and Morty API) y permite paginar resultados usando botones Anterior / Siguiente.
-- Se muestra el número de página actual.
-- **Justificación:** Permite manejar grandes volúmenes de datos sin recargar el DOM.
+- Se agregó un **buscador de texto** para filtrar los datos mostrados que provienen de un archivo JSON local, permitiendo al usuario buscar por nombre o características.  
+- Además, se implementaron **filtros por categorías** usando dropdowns para que el usuario pueda segmentar los resultados según diferentes criterios.  
+- La búsqueda y filtrado se realizan en el frontend, sin llamadas externas, lo que mejora la velocidad de respuesta.  
 
 
 
-### 4. 📷 Galería de Imágenes Interactiva
+### 3. Paginación para la API Externa
 
-- Se diseñó una galería de imágenes en `grid`.
-- Al hacer clic, se abre un **lightbox** con vista ampliada y botones para navegar entre imágenes.
-- También se puede cerrar con un botón o tecla `ESC`.
-- **Justificación:** Enriquece la presentación visual de los contenidos.
+- Se incorporaron **botones de navegación** para recorrer las páginas de resultados que entrega la API externa.  
+- Se muestra claramente el **número de página actual** y, cuando la API lo permite, el total de páginas disponibles.  
+- Esto facilita la exploración de grandes volúmenes de datos y mejora la organización visual.  
+
+
+
+### 4. Carrusel de Proyectos Destacados
+
+- Se desarrolló un **carrusel responsive** que presenta proyectos destacados del equipo.  
+- Incluye controles de navegación manual, con flechas laterales y puntos de paginación (dots), para que el usuario pueda avanzar o retroceder con facilidad.  
+- El carrusel está optimizado para diferentes tamaños de pantalla y mejora la presentación visual del contenido destacado.  
+
+
+
+## Resumen
+
+Estas mejoras contribuyen a una interfaz más amigable y dinámica, facilitan la búsqueda y navegación de la información, y potencian la interacción del usuario con el sitio web, cumpliendo con los requisitos y demostrando un avance significativo respecto a la versión anterior.
+
 
 
 

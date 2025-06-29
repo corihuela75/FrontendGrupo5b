@@ -82,26 +82,44 @@ export default function BitacoraTrabajo() {
 
           <section>
             <h2 className="text-2xl font-semibold mb-3">✨ Mejoras implementadas</h2>
-            <p>A continuación detallamos las <strong>4 mejoras</strong> aplicadas al proyecto, elegidas del listado propuesto:</p>
-            <ul className="list-disc list-inside space-y-2 mt-3">
-              <li>
-                <strong>🎨 Mejora de Interfaz: Animaciones Suaves</strong><br />
-                Se aplicaron transiciones animadas, efectos <code>hover</code> y se utilizó Animate.css para mayor fluidez visual.
-              </li>
-              <li>
-                <strong>🔍 Búsqueda y Filtros en JSON Local</strong><br />
-                Implementamos un buscador y selectores desplegables para mejorar la accesibilidad al contenido.
-              </li>
-              <li>
-                <strong>📄 Paginación para API Externa</strong><br />
-                Se consumió una API y se aplicó paginación con botones Anterior / Siguiente.
-              </li>
-              <li>
-                <strong>📷 Galería de Imágenes Interactiva</strong><br />
-                Incluimos una galería en <code>grid</code> con lightbox, vista ampliada y navegación.
-              </li>
+            <p>
+              El objetivo fue implementar al menos 4 de las mejoras propuestas en el listado, para mejorar la experiencia de usuario, la interfaz y la funcionalidad del sitio. A continuación se describen las mejoras seleccionadas y cómo se llevaron a cabo:
+            </p>
+            <hr className="my-4" />
+            <h3 className="text-xl font-semibold mb-2">1. Mejora de la Interfaz: Animaciones Suaves</h3>
+            <ul className="list-disc list-inside mb-4 space-y-1">
+              <li>Se añadieron <strong>transiciones suaves</strong> en la carga de tarjetas y al navegar entre páginas para que el contenido aparezca de forma más fluida y atractiva.</li>
+              <li>Se implementaron <strong>efectos hover</strong> en botones y tarjetas que resaltan elementos interactivos cuando el cursor pasa sobre ellos, mejorando la usabilidad.</li>
+              <li>Para esto, se usó <strong>CSS puro</strong>, con transiciones en propiedades como <code>opacity</code>, <code>transform</code> y <code>box-shadow</code>.</li>
             </ul>
+            <hr className="my-4" />
+            <h3 className="text-xl font-semibold mb-2">2. Búsqueda/Filtrado en JSON Local</h3>
+            <ul className="list-disc list-inside mb-4 space-y-1">
+              <li>Se agregó un <strong>buscador de texto</strong> para filtrar los datos mostrados que provienen de un archivo JSON local, permitiendo al usuario buscar por nombre o características.</li>
+              <li>Además, se implementaron <strong>filtros por categorías</strong> usando dropdowns para que el usuario pueda segmentar los resultados según diferentes criterios.</li>
+              <li>La búsqueda y filtrado se realizan en el frontend, sin llamadas externas, lo que mejora la velocidad de respuesta.</li>
+            </ul>
+            <hr className="my-4" />
+            <h3 className="text-xl font-semibold mb-2">3. Paginación para la API Externa</h3>
+            <ul className="list-disc list-inside mb-4 space-y-1">
+              <li>Se incorporaron <strong>botones de navegación</strong> para recorrer las páginas de resultados que entrega la API externa.</li>
+              <li>Se muestra claramente el <strong>número de página actual</strong> y, cuando la API lo permite, el total de páginas disponibles.</li>
+              <li>Esto facilita la exploración de grandes volúmenes de datos y mejora la organización visual.</li>
+            </ul>
+            <hr className="my-4" />
+            <h3 className="text-xl font-semibold mb-2">4. Carrusel de Proyectos Destacados</h3>
+            <ul className="list-disc list-inside mb-4 space-y-1">
+              <li>Se desarrolló un <strong>carrusel responsive</strong> que presenta proyectos destacados del equipo.</li>
+              <li>Incluye controles de navegación manual, con flechas laterales y puntos de paginación (dots), para que el usuario pueda avanzar o retroceder con facilidad.</li>
+              <li>El carrusel está optimizado para diferentes tamaños de pantalla y mejora la presentación visual del contenido destacado.</li>
+            </ul>
+            <hr className="my-6" />
+            <h2 className="text-2xl font-semibold">Resumen</h2>
+            <p>
+              Estas mejoras contribuyen a una interfaz más amigable y dinámica, facilitan la búsqueda y navegación de la información, y potencian la interacción del usuario con el sitio web, cumpliendo con los requisitos y demostrando un avance significativo respecto a la versión anterior.
+            </p>
           </section>
+
 
           <section>
             <h2 className="text-2xl font-semibold mb-3">✅ Evaluación cumplida</h2>
