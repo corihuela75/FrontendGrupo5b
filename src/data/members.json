@@ -6,7 +6,9 @@
     "image": "/images/profiles-photo/Eli.jpg",
     "bio": "Conectando el mundo legal con regulación digital y protección de datos para impulsar proyectos seguros e innovadores.",
     "social_media": {
-      "github": "https://github.com/LizGeno",
+      "github": "https://github.com/freeCodeCamp",
+      "github3": "https://github.com/facebook/react", 
+      "github2": "https://github.com/LizGeno",
       "linkedin": "https://www.linkedin.com/in/eli-catmaster",
       "instagram": "https://www.instagram.com/eli.y.michis"
     },
@@ -37,7 +39,8 @@
     "image": "/images/profiles-photo/Agos.jpg",
     "bio": "Agos domina el arte de contar historias visuales y captar la atención en redes.",
     "social_media": {
-      "github": "https://github.com/agos-media",
+      "github2": "https://github.com/agos-media",
+      "github": "https://github.com/Codecademy", 
       "linkedin": "https://www.linkedin.com/in/agostina-social",
       "instagram": "https://www.instagram.com/agos.visuals"
     },
